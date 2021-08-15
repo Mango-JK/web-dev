@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>StudyOlle</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="shortcut icon" href="#">
   <style>
     .container {
       max-width: 100%;
@@ -44,7 +45,7 @@
     </div>
     <div class="row justify-content-center">
       <form class="needs-validation col-sm-6"
-      th:action="@{/signup}" th:object="${signUpForm}" method="post" novalidate>
+      th:action="@{/sign-up}" th:object="${signUpForm}" method="post" novalidate>
         <div class="form-group">
           <label for="nickname">닉네임</label>
           <input id="nickname" type="text" th:field="*{nickname}" class="form-control"
@@ -99,7 +100,26 @@
       <small class="d-block mb-3 text-muted">&copy; 2020</small>
     </div>
   </footer>
-
+  </div>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script type="application/javascript">
+    (function () {
+      'use strict';
+
+      window.addEventListener('load', function () {
+        var forms = document.getElementsByClassName('needs-validation');
+
+        Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if(form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated')
+          })
+        })
+      })
+    })
+  </script>
 </body>
 </html>
