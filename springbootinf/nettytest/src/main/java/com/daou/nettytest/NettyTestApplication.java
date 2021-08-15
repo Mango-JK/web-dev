@@ -1,2 +1,5 @@
-package com.daou.nettytest;public class NettyTestApplication {
+package com.daou.nettytest;
+
+
+public class NettyTestApplication {
 }

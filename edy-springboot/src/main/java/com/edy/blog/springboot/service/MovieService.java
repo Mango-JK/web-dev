@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @Service
-public class UserService {
+public class MovieService {
 
 	public List<Movie> query(final String query) {
 		return Arrays.asList(
