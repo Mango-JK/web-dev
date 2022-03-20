@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+html {height:100%; overflow-y:auto;}
+body { margin-top:0 !important; padding:0 !important; min-width:320px; color:#333; line-height:1.5; font-size:14px; font-family:"Noto Sans KR", 'malgun Gothic', Dotum, Gulim, Helvetica, sans-serif; word-break:break-all; word-wrap:break-word; word-break:keep-all; font-weight:400;}
+h1, h2, h3, h4, h5, h6 {font-family:"Noto Sans KR", 'malgun Gothic', Dotum, Gulim, Helvetica, sans-serif; font-size:14px; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, blockquote, th, td, p, button, span, a, i {margin:0; padding:0; -webkit-text-size-adjust:none; box-sizing:border-box;}
+fieldset, img, abbr, acronym {border: 0 none;}
+legend {position:absolute; height:0; line-height:0; font-size:0; overflow:hidden;}
+legend.showlegend {position:static; line-height:14px; font-size:12px; overflow:visible;}
+i, address, caption, cite, code, dfn, em, var {font-style:normal; font-weight:normal;}
+ol, ul {list-style:none;}
+q:before, q:after {content:'';}
+table {border-collapse:collapse; border-spacing:0;}
+caption {height:0; line-height:0; font-size:0; overflow:hidden; text-indent:-10000px;}
+hr {display:none;}
+div.btArea a,
+div.btArea span {vertical-align:middle;}
+a {color: #333; text-decoration:none; cursor:pointer;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+button {border:0 none; background:none;}
+button::-moz-focus-inner,input::-moz-focus-inner {border:0; padding:0;}
+button, input, select, textarea {color:#555; line-height:19px; font-size:13px; font-family:"Noto Sans KR", 'malgun Gothic', Dotum, Gulim, Helvetica, sans-serif; vertical-align:middle;}
+select {
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+  background-repeat: no-repeat;
+  background-position:calc(100% - 15px) center;
+  background-position:-webkit-calc(100% - 15px) center;
+  background-position:-moz-calc(100% - 15px) center;
+}
+select::-ms-expand {display: none;}
+input[type="text"],input[type="password"],input[type="number"],input[type="tel"],input[type="email"],input[type="button"],input[type="submit"],textarea {-webkit-appearance: none;-moz-appearance: none; }
+a[href^="tel"] {color:inherit; text-decoration:none;}
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {cursor:pointer; overflow:visible; -webkit-appearance:button;}
+input[type="text"] {width:100%;}
+select {outline:none;}
+textarea {outline:none; width:100%;}
+textarea:focus,
+input[type="text"]:focus {outline:none; width:100%;}
+input[type="password"]:focus {outline:none; width:100%;}
+input[type="checkbox"],
+input[type="radio"] {box-sizing:border-box;}
+input[type="search"] {-webkit-appearance:textfield; -moz-box-sizing:content-box; -webkit-box-sizing:content-box; box-sizing:content-box;}
+input[type="search"]::-webkit-search-decoration {-webkit-appearance:none;}
+input::-webkit-input-placeholder{color:#ccc;}
+input:-moz-input-placeholder{color:#ccc;}
+input::-moz-input-placeholder{color:#ccc;}
+input:-ms-input-placeholder{color:#ccc;}
+img {vertical-align:top;}
+textarea {overflow:auto; resize:none;}
+textarea::-webkit-input-placeholder {color:#ccc;}
+textarea:-moz-placeholder {color:#ccc;}
+textarea::-moz-placeholder {color:#ccc;}
+textarea:-ms-input-placeholder {color:#ccc;}
+button:focus {border:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, object {display:block; margin:0; padding:0;}
+audio[controls], canvas, video {display:inline-block; *display:inline; *zoom:1;}
+label, a, button {-o-tap-highlight-color:rgba(0, 0, 0, 0); -ms-tap-highlight-color:rgba(0, 0, 0, 0); -moz-tap-highlight-color:rgba(0, 0, 0, 0); -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
+input[type="text"]:focus, input[type="password"]:focus {border:1px solid #4189ff;}
+form, fieldset, legend {font-size:inherit; font-weight:normal; box-sizing:border-box; margin:0; padding:0; word-break:keep-all;}
+input[type=email]::-ms-clear,
+input[type=tel]::-ms-clear,
+input[type=number]::-ms-clear,
+input[type=password]::-ms-clear,
+input[type=text]::-ms-clear {
+  display:none;
+}
+
+
+div.login-body {background-color:#f4f4f4;}
+div.wrap {max-width:510px; margin:0 auto; padding:120px 0; text-align:center;}
+div.wrapArea {width:100%; height:450px; padding:65px 50px 70px 50px; border-radius:12px; background-color:#fff; position:relative; box-shadow:rgb(20 20 20 / 5%) 4px 16px 36px 0px, rgb(20 20 20 / 5%) 0px 4px 8px 0px;}
+div.container {max-width:400px; margin:0 auto; text-align:center;}
+div.loginArea {width:400px; float:left;}
+
+div.loginArea div.box {display:flex; justify-content:space-between; align-items:flex-end;}
+div.loginArea div.img {width:130px; height:130px; margin-right:20px;}
+div.loginArea div.title {text-align:left; letter-spacing:-0.8px; margin-bottom:40px;}
+div.loginArea div.title h1 {font-size:36px; font-weight:700; color:#000;}
+div.loginArea div.title p {font-size:14px; color:#333; margin:10px 0 0 3px;}
+div.loginArea div.enter {width:100%; margin-bottom:18px; float:left;}
+div.loginArea div.enter label {display:none;}
+div.loginArea div.enter > div > input[type="text"],
+div.loginArea div.enter > div > input[type="password"] {width:100%; font-size:14px; padding:0 16px; height:50px; line-height:50px; border:1px solid #ddd;}
+div.loginArea div.enter div:nth-child(2) {margin-top:10px;}
+
+div.loginArea div.btArea button.loginBtn {display:block; cursor:pointer; text-align:center; position:relative; width:100%; height:60px; line-height:60px; background-color:#000; border:none; font-size:15px; font-weight:700; color:#fff;}
+div.loginArea div.btArea button.loginBtn:hover,button.bt_login.on {transition:color .15s linear; background-color:#333;}
+
+/* 에러 페이지 */
+div.errorArea {max-width:510px; margin:0 auto; padding:120px 0; text-align:center;}
+div.errorBox {max-width:400px; margin:0 auto; text-align:center;}
+div.errorBox span {display:inline-block; text-indent:-9999em;}
+div.errorBox.badRequest span {width:384px; height:220px; background:url('/images/error/400.png');margin-left:-48px;}
+div.errorBox.notFound span {width:330px; height:305px; background:url('/images/error/404.png');}
+div.errorBox.serverError span {width:390px; height:305px; background:url('/images/error/500.png');}
+
+div.errorBox p {font-size:15px; color:#7d7f84; letter-spacing:-0.05em; font-weight:500; margin:56px 0 19px;}
+div.errorBox a.bt_main {text-decoration:underline; font-size:15px; font-weight:700; color:#333; margin:0 auto; letter-spacing:-0.05em;}
+div.errorBox a.bt_main:hover,a.bt_main.on {transition:color .15s linear; font-weight: 750;}
