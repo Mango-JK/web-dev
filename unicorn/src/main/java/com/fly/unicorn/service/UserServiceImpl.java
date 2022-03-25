@@ -28,4 +28,14 @@ public class UserServiceImpl implements UserService {
 			.getId();
 		return userId;
 	}
+
+	public User findUser(UserDto user) {
+		User member = userRepository.findByEmail(user.getEmail())
+			.orElseThrow(() -> new IllegalArgumentException("아이디 혹은 비밀번호가 잘못되었습니다."));
+		return member;
+	}
+
+	public boolean checkPassword(User member, UserDto user) {
+		return passwordEncoder.matches(user.getPassword(), member.getPassword());
+	}
 }
